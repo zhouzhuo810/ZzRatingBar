@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ZzRatingBar">
+        <attr name="zrb_rating" format="integer" />
+        <attr name="zrb_star_count" format="integer" />
+        <attr name="zrb_click_enable" format="boolean" />
+        <attr name="zrb_star_dimension" format="dimension" />
+        <attr name="zrb_horizontal_spacing" format="dimension" />
+        <attr name="zrb_normal_star_res" format="reference" />
+        <attr name="zrb_checked_star_res" format="reference" />
+    </declare-styleable>
+</resources>
