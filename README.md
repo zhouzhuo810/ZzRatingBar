@@ -21,8 +21,7 @@ compile 'me.zhouzhuo.zzratingbar:zz-rating-bar:1.0.0'
 
 <h3>What does it look like ?</h3>
 
-![demo](http://img.blog.csdn.net/20160910150845391)
-
+![demo](https://github.com/zhouzhuo810/ZzRatingBar/blob/master/zz_rating_bar.gif)
 
 
 <h3>How to use it ?</h3>
