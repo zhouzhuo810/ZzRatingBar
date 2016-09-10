@@ -34,6 +34,14 @@
             android:layout_marginTop="15dp"
             android:text="click_enable" />
 
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20"
+            android:progress="0"
+            />
+
         <Button
             android:id="@+id/btn_one"
             android:layout_width="match_parent"

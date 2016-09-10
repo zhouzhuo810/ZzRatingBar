@@ -146,6 +146,7 @@ public class ZzRatingBar extends LinearLayout {
         }
     }
 
+
     /**
      * set rating callback
      *
@@ -175,6 +176,18 @@ public class ZzRatingBar extends LinearLayout {
     public void setCheckedStarDrawable(int checkedStarDrawable) {
         this.checkedStarDrawable = checkedStarDrawable;
         setRating(rating);
+    }
+
+    public void setSpacingInPixel(int spacing) {
+        this.spacing = spacing;
+        for (int i = 0; i < starCount; i++) {
+            ImageView iv = (ImageView) getChildAt(i);
+            LayoutParams params = (LayoutParams) iv.getLayoutParams();
+            if (i != 0) {
+                params.leftMargin = spacing;
+                iv.setLayoutParams(params);
+            }
+        }
     }
 
     @Override

@@ -3,10 +3,12 @@ package me.zhouzhuo.zzratingbardemo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SwitchCompat;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import me.zhouzhuo.zzratingbar.ZzRatingBar;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private Button btnStyleOne;
     private Button btnStyleTwo;
     private SwitchCompat sw;
+    private SeekBar sb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         ratingBar = (ZzRatingBar) findViewById(R.id.zzratingbar);
 
         tvResult = (TextView) findViewById(R.id.tv_result);
+        sb = (SeekBar) findViewById(R.id.seekbar);
         sw = (SwitchCompat) findViewById(R.id.sw);
         sw.setChecked(ratingBar.isClickEnable());
         btnOne = (Button) findViewById(R.id.btn_one);
@@ -80,6 +84,25 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             }
         });
 
+
+        sb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                //设置水平间距
+                ratingBar.setSpacingInPixel(progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         //set rating changed listener
         ratingBar.setOnRatingChangedListener(new ZzRatingBar.OnRatingChangedListener() {
             @Override
@@ -87,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 tvResult.setText("rating:" + current + ",total:" + count);
             }
         });
+
 
 
     }
