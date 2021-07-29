@@ -5,18 +5,7 @@ A powerful RatingBar that can be customized easily.
 **Gradle:**
 
 ```
-compile 'me.zhouzhuo.zzratingbar:zz-rating-bar:1.0.0'
-```
-
-**Maven:**
-
-```xml
-<dependency>
-  <groupId>me.zhouzhuo.zzratingbar</groupId>
-  <artifactId>zz-rating-bar</artifactId>
-  <version>1.0.0</version>
-  <type>pom</type>
-</dependency>
+implementation 'com.github.zhouzhuo810:ZzRatingBar:1.0.0'
 ```
 
 <h3>What does it look like ?</h3>

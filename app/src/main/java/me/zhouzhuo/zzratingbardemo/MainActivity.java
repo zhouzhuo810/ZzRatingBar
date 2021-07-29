@@ -1,9 +1,6 @@
 package me.zhouzhuo.zzratingbardemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SwitchCompat;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -11,6 +8,8 @@ import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 import me.zhouzhuo.zzratingbar.ZzRatingBar;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
